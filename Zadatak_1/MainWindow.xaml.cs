@@ -27,7 +27,17 @@ namespace Zadatak_1
         {
             InitializeComponent();
             DataContext = mvm;
-            mvm.GetHtml();
+        }
+
+        private void GetHtmlBtn(object sender, RoutedEventArgs e)
+        {
+            mvm.GetHtml(HTMLbox.Text);
+            HTMLbox.Text = "";
+        }
+
+        private void MakeZipFile(object sender, RoutedEventArgs e)
+        {
+            mvm.CreateZip();
         }
     }
 }

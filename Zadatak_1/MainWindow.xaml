@@ -3,10 +3,14 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        WindowStartupLocation="CenterScreen"
         xmlns:local="clr-namespace:Zadatak_1"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Click="GetHtmlBtn" Content="Download HTML" HorizontalAlignment="Left" Margin="150,350,0,0" VerticalAlignment="Top" Width="99"/>
+        <Button Click="MakeZipFile" Content="Zip files" HorizontalAlignment="Left" Margin="575,350,0,0" VerticalAlignment="Top" Width="75"/>
+        <TextBox x:Name="HTMLbox" HorizontalAlignment="Left" Height="224" Margin="150,100,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="500"/>
+        <Label FontSize="20" Content="Place page link here:" HorizontalAlignment="Left" Margin="302,38,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

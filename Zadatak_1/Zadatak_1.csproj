@@ -92,16 +92,14 @@
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
-    <None Include="ZIP\HTML.zip" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="HTML\" />
     <Folder Include="View\" />
-  </ItemGroup>
-  <ItemGroup>
-    <Resource Include="HTML\HTML.txt" />
+    <Folder Include="ZIP\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
